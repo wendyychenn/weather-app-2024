@@ -38,7 +38,7 @@ export default function FiveDay(
 
                                 const convertToCelcius = list[d].main.temp - 273.15;
 
-                                const weatherIcons = {
+                                const weatherIcons: { [key: string]: string } = {
                                     '10d': 'rain',
                                     '10n': 'rain',
                                     '13d': 'snow',

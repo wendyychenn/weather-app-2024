@@ -32,7 +32,7 @@ export default function Current(
 
                     const convertToCelcius = main.temp - 273.15;
 
-                    const weatherIcons = {
+                    const weatherIcons: { [key: string]: string } = {
                         '10d': 'rain',
                         '10n': 'rain',
                         '13d': 'snow',

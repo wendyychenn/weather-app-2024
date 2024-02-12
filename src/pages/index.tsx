@@ -39,9 +39,9 @@ export default function Home() {
 
   return (
     <main className={`flex min-h-screen flex-col`}>
-      <header style={{padding: '3rem 5rem', textAlign: 'end', color: '#0E6CAA', fontWeight: 'bold' }}>
-        <input value={city} onChange={inputData} style={{ padding: '0.2rem 0.4rem 0.2rem 0.6rem', borderRadius: '0.5rem 0rem 0rem 0.5rem' }} />
-        <button type='submit' onClick={() => GetCurrentInfo()} style={{ padding: '0.2rem 1.2rem 0.2rem 1.2rem', borderRadius: '0rem 0.5rem 0.5rem 0rem', backgroundColor: '#D599BD', color: 'white' }}>Go</button>
+      <header style={{padding: '3rem', textAlign: 'end', color: '#0E6CAA', fontWeight: 'bold' }}>
+        <input value={city} onChange={inputData} style={{ padding: '0.2rem 0rem 0.2rem 0.6rem', borderRadius: '0.5rem 0rem 0rem 0.5rem'}} />
+        <button type='submit' onClick={() => GetCurrentInfo()} style={{ padding: '0.2rem 1rem 0.2rem 1rem', borderRadius: '0rem 0.5rem 0.5rem 0rem', backgroundColor: '#D599BD', color: 'white' }}>Go</button>
       </header>
       <Current data={data} />
       <FiveDay data={fiveDayData} />
