@@ -53,8 +53,6 @@ export default function Current(
                     const weatherIconCode = weather[0].icon;
                     const weatherIcon = weatherIcons[weatherIconCode];
 
-                    const iconSrc = weatherIcon ? `/images/${weatherIcon}.png` : ''; 
-
                     return (
                         <div key={index} style={{ margin: '2rem 0rem', color: 'white', display: 'flex', flexDirection: 'column', gap: '1.2rem', alignItems: 'center' }}>
                             <div style={{ fontSize: '2.8rem' }}>
@@ -63,7 +61,7 @@ export default function Current(
                             <div style={{ display: 'flex', flexDirection: 'row', gap: '3rem', alignItems: 'center', margin: '2rem 0rem' }}>
 
                                 <img style={{ width: 190, height: 190 }}
-                                    src={iconSrc} />
+                                    src={`/images/${weatherIcon}.png`} />
 
                                 <div style={{ display: 'flex', flexDirection: 'column' }}>
 
