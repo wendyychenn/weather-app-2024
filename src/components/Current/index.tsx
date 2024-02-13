@@ -6,7 +6,7 @@ export default function Current(
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', backgroundColor: 'rgba(255, 255, 255, 0.75)', margin: '10rem 18rem', padding: '6rem 2rem', borderRadius: '1rem' }}>
                 <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#7C6AA8' }}>Find The Weather</h1>
                 <p style={{ fontSize: '1.3rem' }}>1. Enter a Location</p>
-                <p style={{ fontSize: '1.3rem' }}>2. Find the City's Current Weather and a 6-Day-Forecast</p>
+                <p style={{ fontSize: '1.3rem' }}>2. Find the City's Current Weather and a 5-Day-Forecast</p>
 
             </div>
         )
