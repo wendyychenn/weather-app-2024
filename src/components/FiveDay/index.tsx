@@ -52,8 +52,11 @@ export default function FiveDay(
                                     '01d': 'clear',
                                     '01n': 'clear',
                                     '11d': 'thunder',
+                                    '11n': 'thunder',
                                     '09d': 'drizzle',
-                                    '50n': 'rain'
+                                    '09n': 'drizzle',
+                                    '50d': 'atmosphere',
+                                    '50n': 'atmosphere'
                                 }
 
                                 const weatherIconCode = list[d].weather[0].icon;
@@ -63,7 +66,7 @@ export default function FiveDay(
 
                                 return (
 
-                                    <div key={innerIndex} style={{ margin: '1rem', backgroundColor: 'rgba(255, 255, 255, 0.75)', padding: '1.5rem', borderRadius: '0.5rem', display:'flex', flexDirection:'column',alignItems:'center' }}>
+                                    <div key={innerIndex} style={{ margin: '1rem', backgroundColor: 'rgba(255, 255, 255, 0.75)', padding: '1.5rem', borderRadius: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                         <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#7C6AA8' }}>{formattedDate}</div>
                                         <div style={{ fontSize: '3rem', textAlign: 'center', marginTop: '1rem' }}>{convertToCelcius.toFixed(1)} °C</div>
                                         <img style={{ width: 100, height: 100 }}

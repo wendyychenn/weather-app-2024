@@ -46,8 +46,11 @@ export default function Current(
                         '01d': 'clear',
                         '01n': 'clear',
                         '11d': 'thunder',
+                        '11n': 'thunder',
                         '09d': 'drizzle',
-                        '50n': 'rain'
+                        '09n': 'drizzle',
+                        '50d': 'atmosphere',
+                        '50n': 'atmosphere'
                     }
 
                     const weatherIconCode = weather[0].icon;
